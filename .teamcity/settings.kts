@@ -31,7 +31,7 @@ project {
     buildType(BuildHelloworld)
 }
 
-object BuildHelloworld : BuildType({
+object BuildHelloworld(name:String) : BuildType({
     name = "Build_helloworld"
 
     vcs {
