@@ -31,7 +31,7 @@ project {
     buildType(BuildHelloworld)
 }
 
-object BuildHelloworld(name:String) : BuildType({
+object BuildHelloworld : BuildType({
     name = "Build_helloworld"
 
     vcs {
@@ -39,8 +39,8 @@ object BuildHelloworld(name:String) : BuildType({
     }
     steps {
         script {
-            this.name = "hello_world"
-            this.scriptContent = """echo "hello""""
+           name = "hello_world"
+            scriptContent = """echo "hello""""
         }
 
     }
