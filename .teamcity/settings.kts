@@ -39,8 +39,8 @@ object BuildHelloworld : BuildType({
     }
     steps {
         script {
-            name = "hello_world"
-            scriptContent = """echo "hello""""
+            this.name = "hello_world"
+            this.scriptContent = """echo "hello""""
         }
 
     }
