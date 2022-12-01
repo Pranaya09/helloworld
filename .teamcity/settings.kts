@@ -37,7 +37,12 @@ object BuildHelloworld : BuildType({
     vcs {
         root(DslContext.settingsRoot)
     }
-
+    steps {
+        script {
+            name = "hello_world"
+            scriptContent = """echo "hello""""
+        }
+    }
     triggers {
         vcs {
         }
