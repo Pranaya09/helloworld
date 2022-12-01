@@ -42,6 +42,7 @@ object BuildHelloworld : BuildType({
             name = "hello_world"
             scriptContent = """echo "hello""""
         }
+
     }
     triggers {
         vcs {
